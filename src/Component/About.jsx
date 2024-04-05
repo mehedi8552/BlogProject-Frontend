@@ -1,0 +1,41 @@
+import React from 'react';
+
+const About = () => {
+    return (
+        <div className='flex space-x-4 mx-16'>
+            <div className='h-96 w-1/2 bg-white shadow-xl my-3 rounded-md'>
+                <h3 className='m-3 font-bold'>We Provide <br /><span className='text-yellow-300'>Best Tour Guide</span></h3>
+                <p className='m-3 font-serif'>Welcome to Happy Tour, your ultimate guide to exploring the world's most captivating destinations! Founded with a passion for travel and a commitment to providing unforgettable experiences, we strive to connect travelers with the wonders of our planet.Welcome to Happy Tour, your ultimate guide to exploring the world's most captivating destinations! Founded with a passion for travel and a commitment to providing unforgettable experiences, we strive to connect travelers with the wonders of our planet.</p>
+            </div>
+            
+            
+            <div className='h-96 w-1/2 bg-green-400 rounded-md shadow-xl my-3 ml-6'>
+                <img className='h-40 w-11/12  m-6 ml-8 rounded-md' src="https://cdn.daily-sun.com/public/news_images/2021/10/30/Cox%E2%80%99s_Bazar.jpg" alt="" />
+            <div className='flex space-x-4'>
+                <div className='h-20 w-80 bg-white rounded-md shadow-md ml-9'>
+                    <div className='m-2 pl-5'>
+                    <h3 className='font-bold'>3.5</h3>
+                    <p>Years Exprience</p>
+                        </div>
+                    </div>
+                <div className='h-20 w-72 bg-white rounded-md shadow-md mr-9'>
+                <div className='m-2 pl-5'>
+                    <h3 className='font-bold'>350+</h3>
+                    <p>Positive Review</p>
+                        </div>
+                </div>
+            </div>
+            <div className='mr-3'>
+            <div className='h-20 width: auto my-2 ml-9 mr-4 bg-white rounded-md shadow-md'>
+            <div className='ml-60'>
+             <h2 className='font-bold'>3000+</h2>
+                    <p>Members</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    );
+};
+
+export default About;
