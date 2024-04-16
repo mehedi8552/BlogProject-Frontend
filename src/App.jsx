@@ -7,6 +7,7 @@ import HomePage from "./Page/HomePage"
 import ContactPage from "./Page/ContactPage"
 import AbouPage from "./Page/AbouPage"
 import ManageBlogPage from "./Page/ManageBlogPage"
+import SignUpPage from "./Page/SignUpPage"
 function App() {
 
   return (
@@ -16,6 +17,8 @@ function App() {
     <Route path="/contacts" element={<ContactPage/>}/>
     <Route path="/About-us" element={<AbouPage/>}/>
     <Route path="/ccc" element={<ManageBlogPage/>}/>
+    <Route path="/hello" element={<SignUpPage/>}/>
+    <Route path="/hello" element={<ContactPage/>}/>
     </Routes>
     </BrowserRouter>
   )
