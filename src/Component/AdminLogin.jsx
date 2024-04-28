@@ -1,23 +1,24 @@
 import React from 'react';
 import UserStore from "../Store/UserStore";
-const BloggerLogin = () => {
-  const {
-    login,
-    setlogin,
-    OldLoginreq,
-  } = UserStore();
 
-  const loginbtn = async () => {
-    await OldLoginreq(login);
-  };
-  
+const AdminLogin = () => {
+          const {
+                    login,
+                    setlogin,
+                    OldLoginreq,
+                  } = UserStore();
+                
+                  const loginbtn = async () => {
+                    await OldLoginreq(login);
+                  };
+                  
     return (
         <div className=" h-screen flex justify-center items-center bg-green-200 p-4 ">
         <div className="flex justify-content-center bg-white rounded-xl shadow-md">
           <div>
             <div className=" p-5">
               <h4 className="text-center font-bold text-2xl my-6">
-                Blogger Login
+                Admin Login
               </h4>
 
               <input
@@ -43,8 +44,8 @@ const BloggerLogin = () => {
             </div>
           </div>
         </div>
-      </div>
-    );
+</div>
+          );
 };
 
-export default BloggerLogin;
+export default AdminLogin;

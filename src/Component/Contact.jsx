@@ -60,7 +60,7 @@ const Contact = () => {
         </div>
           </div>
           <div className='h-fit w-11/12 lg:rounded-r-md bg-white p-3 md:h-5/6'>
-            <div className='pl-8 lg:pt-24'>
+            <div className='pl-8 lg:pt-20'>
               <h3>Contact us</h3>
             <p className='font-thin'>We're open for any suggestion or just to have a chat</p>
             <div className='flex'> 
@@ -69,7 +69,7 @@ const Contact = () => {
               <FaLocationArrow/> 
               </div>
             </p>
-             <p className='pl-3 sm:mt-3'> <strong>Address:</strong> 198 West 21th Street, Suite 721 New York NY 10016</p>
+             <p className='pl-3 sm:mt-3'> <strong>Address: </strong>mirpur 11,Dhaka bangladesh</p>
              </div>
              <div className='flex '> 
             <p className=' mt-2 h-12 w-12 border-indigo-600 rounded-full border '>
@@ -77,7 +77,7 @@ const Contact = () => {
               <FaPhone/> 
               </div>
             </p>
-             <p className='pl-3 py-3'><strong>Phone:</strong> + 1235 2355 98</p>
+             <p className='pl-3 py-3'><strong>Phone:</strong> +8801770228395</p>
              </div>
              <div className='flex '> 
             <p className=' mt-2 h-12 w-12 border-indigo-600 rounded-full border '>
@@ -85,7 +85,7 @@ const Contact = () => {
               <FaMailBulk/> 
               </div>
             </p>
-             <p className='pl-3 py-3'><strong>Email:</strong> info@yoursite.com</p>
+             <p className='pl-3 py-3'><strong>Email:</strong> mehedi193002106@gmail.com</p>
              </div>
              <div className='flex '> 
             <p className=' mt-2 h-12 w-12 border-indigo-600 rounded-full border '>

@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { BsSearch } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import ProductStore from "../Store/ProductStore";
 import UserStore from "../Store/UserStore";
 import { Transition } from "@headlessui/react";
 import { useNavigate } from "react-router-dom";
+import logo from '../assets/logo.jpg'
 const NavBar = () => {
+  const {setSearchKeyword,Searchkeyword } = ProductStore();
   const navigate = useNavigate();
   const navIslogin = [
     { name: "Home", to: "/" },
@@ -44,12 +49,24 @@ const NavBar = () => {
               <ul className="flex items-center justify-content space-x-5 ">
                 {islogin() ? (
                   <>
+                                      <div className="flex">
                     <input
-                      className="border-black"
+                      value={Searchkeyword}
+                      onChange={(e) => setSearchKeyword(e.target.value)
+                      }
+                      class=" w-40 appearance-none border border-red-500 rounded-l-md border-r-0  py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                       type="search"
                       placeholder="Search"
                       aria-label="Search"
-                    />
+                    ></input>
+                    <Link
+                      to={`/ProducListByKeyword/${Searchkeyword}`}
+                      className="w-8 h-10 py-2 px-1 bg-white border border-gray-700 rounded-r-md border-l-0 "
+                      type="submit"
+                    >
+                     <BsSearch/>
+                    </Link>
+                    </div>
                     {navIslogin.map((item, i) => {
                       return (
                         <button key={item.name}>
@@ -80,12 +97,24 @@ const NavBar = () => {
                   </>
                 ) : (
                   <>
+                  <div className="flex">
                     <input
-                      class=" w-40 appearance-none border border-red-500 rounded  py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                      id="Search"
-                      type="text"
+                      value={Searchkeyword}
+                      onChange={(e) => setSearchKeyword(e.target.value)
+                      }
+                      class=" w-40 appearance-none border border-red-500 rounded-l-md border-r-0  py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      type="search"
                       placeholder="Search"
+                      aria-label="Search"
                     ></input>
+                    <Link
+                      to={`/ProducListByKeyword/${Searchkeyword}`}
+                      className="w-8 h-10 py-2 px-1 bg-white border border-gray-700 rounded-r-md border-l-0 "
+                      type="submit"
+                    >
+                     <BsSearch/>
+                    </Link>
+                    </div>
                     {navnologin.map((item, i) => {
                       return (
                         <button key={item.name}>
@@ -111,10 +140,20 @@ const NavBar = () => {
                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40"
                       >
                         <li>
-                          <a>Login Admin</a>
+                        <NavLink
+                            className="no-underline text-black"
+                            to={"/admin-login"}
+                          >
+                            Login Admin
+                          </NavLink>
                         </li>
                         <li>
-                          <a>Login Blogger</a>
+                        <NavLink
+                            className="no-underline text-black"
+                            to={"/blogger-login"}
+                          >
+                            Login Blogger
+                          </NavLink>
                         </li>
                       </ul>
                     </div>
@@ -134,15 +173,7 @@ const NavBar = () => {
                         <li>
                           <NavLink
                             className="no-underline text-black"
-                            to={"/ccc"}
-                          >
-                            Sign Up Admin
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink
-                            className="no-underline text-black"
-                            to={"/hello"}
+                            to={"/blogger-signup"}
                           >
                             Sign Up Blogger
                           </NavLink>

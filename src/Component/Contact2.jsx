@@ -21,7 +21,7 @@ const Contact2 = () => {
   };
   return (
     <div className="flex justify-center items-center h-screen bg-white">
-      <div className="h-3/6 w-5/6 bg-white p-8 shadow-md rounded-md md:w-96">
+      <div className="h-fit w-5/6 bg-white p-8 shadow-md rounded-md md:w-96">
         <div className="flex justify-center">
           <form className="space-y-3" ref={form} onSubmit={sendEmail}>
             <p className="text-xl font-semibold pl-20">Send Your Message</p>

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import NumberCounter from 'number-counter';
 const About = () => {
     return (
         <div className='flex h-screen items-center space-x-4 mx-16'>
@@ -14,13 +14,14 @@ const About = () => {
             <div className='flex space-x-4'>
                 <div className='h-20 w-80 bg-white rounded-md shadow-md ml-9'>
                     <div className='m-2 pl-5'>
-                    <h3 className='font-bold'>3.5</h3>
+                    <h3 className='font-bold'></h3>
+                    <NumberCounter className='font-bold increment text-4xl text-gray-600'  end={3} delay={2} postFix="+"/>
                     <p>Years Exprience</p>
                         </div>
                     </div>
                 <div className='h-20 w-72 bg-white rounded-md shadow-md mr-9'>
                 <div className='m-2 pl-5'>
-                    <h3 className='font-bold'>350+</h3>
+                    <NumberCounter className='font-bold increment text-4xl text-gray-600'  end={350} delay={5} postFix="+"/>
                     <p>Positive Review</p>
                         </div>
                 </div>
@@ -28,7 +29,7 @@ const About = () => {
             <div className='mr-3 my-4'>
             <div className='h-20 width: auto my-2 ml-9 mr-4 bg-white rounded-md shadow-md'>
             <div className='ml-60'>
-             <h2 className='font-bold'>3000+</h2>
+             <NumberCounter className='font-bold increment text-4xl text-gray-600'  end={500} delay={2} postFix="+"/>
                     <p>Members</p>
             </div>
             </div>
