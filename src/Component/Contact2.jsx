@@ -7,8 +7,8 @@ const Contact2 = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_bxgj6je", "template_6vecemf", form.current, {
-        publicKey: "QlEKHdnoSPfusg3of",
+      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+        publicKey: 'YOUR_PUBLIC_KEY',
       })
       .then(
         () => {

@@ -3,7 +3,7 @@ import { FaFacebook,FaInstagram,FaLinkedinIn,FaMailBulk,FaPhone } from "react-ic
 import {NavLink} from 'react-router-dom'
 const Footer = () => {
     return (
-        <footer className="footer p-10 pl-16 bg-yellow-100 text-base-content">
+        <footer className="footer p-10 pl-16 bg- text-base-content">
   <aside>
   <p className="my-14">
                 {" "}

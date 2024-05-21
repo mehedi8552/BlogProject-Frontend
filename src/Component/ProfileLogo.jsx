@@ -11,8 +11,12 @@ const ProfileLogo = () => {
     }, []);
 
     return (
-        <div className='flex justify-center'>
-
+        <div>
+            <h1 className='flex justify-center mt-4'>Blogger Profile</h1>
+            <p className='flex justify-center'>You can able to here all Blogger Profile. </p>
+        
+        <div className='flex justify-center mt-6'>
+            
             {
                 ProfileList?.map((item, i) => {
                     return (
@@ -27,6 +31,7 @@ const ProfileLogo = () => {
                     )
                 })
             }
+        </div>
         </div>
     );
 };

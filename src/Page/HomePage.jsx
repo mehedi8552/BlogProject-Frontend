@@ -4,6 +4,7 @@ import Slider from '../Component/Slider';
 import ProfileLogo from '../Component/ProfileLogo';
 import Remark from '../Component/Remark';
 import Link from '../Component/Link';
+import Card from '../Component/Card';
 
 const HomePage = () => {
     return (
@@ -12,6 +13,7 @@ const HomePage = () => {
             <ProfileLogo />
             <Remark />
             <Link/>
+            <Card/>
         </Layout>
     );
 };

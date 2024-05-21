@@ -1,5 +1,5 @@
 import React from "react";
-import { Slide } from "react-slideshow-image";
+import { Slide,Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { Link } from "react-router-dom";
 import ProductStore from "../Store/ProductStore";
@@ -15,7 +15,7 @@ const divStyle = {
   alignItems: "center",
   justifyContent: "center",
   backgroundSize: "cover",
-  height: "400px",
+  height: "500px",
 };
 
 const Slider = () => {
@@ -27,8 +27,9 @@ const Slider = () => {
   }, []);
   return (
     
-    <Link className="slide-container mx-2 no-underline">
+    <Link className="slide-container no-underline h-screen">
       <Slide>
+      <Zoom scale={0.4}>
       {
         SliderList?.map((slideImage, index) => (
           <div key={index}>
@@ -41,6 +42,7 @@ const Slider = () => {
         ))
         
         }
+        </Zoom>
       </Slide>
     </Link>
   );
